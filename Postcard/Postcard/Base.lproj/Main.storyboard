@@ -48,17 +48,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P1n-iU-e9r">
-                                <rect key="frame" x="33" y="207" width="318" height="30"/>
+                                <rect key="frame" x="33" y="280" width="318" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ra1-SL-PLH">
-                                <rect key="frame" x="33" y="270" width="318" height="30"/>
+                                <rect key="frame" x="33" y="324" width="318" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7P-5J-1Ms">
-                                <rect key="frame" x="33" y="318" width="318" height="30"/>
+                                <rect key="frame" x="33" y="236" width="156" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Send Mail">
@@ -68,15 +68,21 @@
                                     <action selector="sendMailButtonPressed:" destination="g1g-l1-T0i" eventType="touchUpInside" id="tua-1i-Nws"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrC-Qt-DQe">
-                                <rect key="frame" x="33" y="86" width="179" height="21"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrC-Qt-DQe">
+                                <rect key="frame" x="33" y="86" width="318" height="56"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tim-1F-yf3">
-                                <rect key="frame" x="220" y="86" width="131" height="80"/>
+                                <rect key="frame" x="220" y="186" width="131" height="80"/>
                             </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiR-04-tPh">
+                                <rect key="frame" x="33" y="181" width="179" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -85,6 +91,8 @@
                         <outlet property="enterMessageTextField" destination="ra1-SL-PLH" id="vEf-jf-2G1"/>
                         <outlet property="enterNameTextField" destination="P1n-iU-e9r" id="7x1-vL-Tpf"/>
                         <outlet property="messageLabel" destination="zrC-Qt-DQe" id="foC-Zt-ETP"/>
+                        <outlet property="nameLabel" destination="wiR-04-tPh" id="jdG-T9-Nnz"/>
+                        <outlet property="sendMailButton" destination="s7P-5J-1Ms" id="vku-D9-NU1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="llo-bf-Arn" userLabel="First Responder" sceneMemberID="firstResponder"/>
